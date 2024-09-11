@@ -21,7 +21,7 @@ This repository contains KnightMicro, which is supposed to work on *MacOS*, *Lin
 ## Features
 
 * Portable C code that can be compiled for a big range of targets.
-* Support for *macOS*, *Linux*, *Windows* and *iOS* targets.
+* Support for *MacOS*, *Linux*, *Windows* and *iOS* targets.
 * Small executable with low resource utilization optimized for embedded systems.
 * Dynamically-extendable, supports loading plugins (TABs) which extend its functionality.
 * Evasion techniques such as process migration and in-memory loading.
