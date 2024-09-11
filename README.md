@@ -1,8 +1,8 @@
 # Friendly like a Pony
 
 ```shell
-                    /
-Knight Cavalry ,.. /
+Knight Cavalry      /
+               ,.. /
              ,'   ';
   ,,.__    _,' /';  .
  :','  ~~~~    '. '~
@@ -12,23 +12,24 @@ Knight Cavalry ,.. /
    (:   ':    ;)
     \\   '"  ./
      '"      '"
+--------------------
 ```
 
-KnightMicro is an implementation of an advanced payload written in pure C and designed for portability and extensibility.
+**KnightMicro** is an implementation of an advanced payload written in pure C and designed for portability and extensibility.
 
-This repository contains KnightMicro, which is supposed to work on *MacOS*, *Linux*, *Windows* and *iOS*, but can be ported to almost every POSIX system. KnightMicro is optimized to work with or without [HatSploit Framework](https://github.com/EntySec/HatSploit).
+This repository contains KnightMicro, which is supposed to work on *MacOS*, *Linux*, *Windows* and *iOS*, but can be ported to almost every POSIX system. KnightMicro is optimized to work with or without [HatSploit](https://github.com/EntySec/HatSploit) Framework.
 
 ## Features
 
 * Portable C code that can be compiled for a big range of targets.
 * Support for *MacOS*, *Linux*, *Windows* and *iOS* targets.
 * Small executable with low resource utilization optimized for embedded systems.
-* Dynamically-extendable, supports loading plugins (TABs) which extend its functionality.
+* Dynamically Extendable, supports loading plugins (TABs) which extend its functionality.
 * Evasion techniques such as process migration and in-memory loading.
 
 ## Installing
 
-To install KnightMicro you simply need to install [HatSploit Framework](https://github.com/EntySec/HatSploit) and this will make KnightMicro available automatically.
+To install KnightMicro you simply need to install [HatSploit](https://github.com/EntySec/HatSploit) Framework and this will make KnightMicro available automatically.
 
 ```python
 pip3 install git+https://github.com/EntySec/HatSploit
@@ -38,13 +39,13 @@ pip3 install git+https://github.com/EntySec/HatSploit
 
 **Building dependencies:**
 
-```
+```shell
 make TARGET=<target>
 ```
 
-**NOTE:** For *macOS / iOS* targets you are required to set `SDK` to the desired SDK path before running `make`. For example:
+**NOTE:** For *MacOS / iOS* targets you are required to set `SDK` to the desired SDK path before running `make`. For example:
 
-```
+```shell
 make TARGET=<target> SDK=<path>
 ```
 
@@ -132,7 +133,7 @@ with open('payload.exe', 'wb') as f:
 
 ## Projects
 
-* [SeaShell Framework](https://github.com/EntySec/SeaShell) - iOS post-exploitation framework that enables you to access the device remotely, control it and extract sensitive information. SeaShell actively uses KnightMicro implant to communicate with iOS.
+* [SeaShell](https://github.com/EntySec/SeaShell) Framework - iOS post-exploitation framework that enables you to access the device remotely, control it and extract sensitive information. SeaShell actively uses KnightMicro implant to communicate with iOS.
 
 ## Caveats
 
